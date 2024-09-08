@@ -1,4 +1,4 @@
-#include "generic-numpad.dtsi"
+#include "tim16.dtsi"
 
 / {
     &left_encoder {
