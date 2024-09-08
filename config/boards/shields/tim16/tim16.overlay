@@ -1,7 +1,7 @@
 #include "tim16.dtsi"
 
 / {
-    &left_encoder {
+    &encoder_one {
         status = "okay";
     };
 };
