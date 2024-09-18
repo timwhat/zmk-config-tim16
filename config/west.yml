@@ -7,7 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-config
-      path: config  # Your config folder path
   self:
     path: config
