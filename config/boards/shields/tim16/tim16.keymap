@@ -3,24 +3,30 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-/ {
+ / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-// -------------------------------------------------------------
-// | Mute Mic|fast scroll|  \    |   DEL   |
-// |changevol|    F7   |    F8   |   F9    |
-// |  Shift  |    F4   |    F5   |   F6    |
-// |  FUNC   |    F1   |    F2   |   F3    |
+        // -------------------------------------------------------------
+        // | Mute Mic| Defan   |  \      |   DEL   |
+        // |         |    F7   |    F8   |   F9    |
+        // |  Shift  |    F4   |    F5   |   F6    |
+        // |         |    F1   |    F2   |   F3    |
 
-            bindings = <
-                &kp C_MUTE &trans   &kp NUBS &kp DEL
+            bindings = < 
+                &kp F24    &kp F23  &kp NUBS &kp DEL
                 &trans     &kp F7   &kp F8   &kp F9
                 &kp RSHIFT &kp F4   &kp F5   &kp F6
                 &trans     &kp F1   &kp F2   &kp F3
             >;
+        };
 
+        encoder_one {
+            compatible = "zmk,behavior-encoder";
+            label = "encoder_one";
+
+            bindings = <&inc VOL_UP>, <&dec VOL_DOWN>;
         };
     };
 };
