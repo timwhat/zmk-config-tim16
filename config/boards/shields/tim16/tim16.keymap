@@ -20,10 +20,8 @@
                 &kp RSHIFT &kp F4   &kp F5   &kp F6
                 &trans     &kp F1   &kp F2   &kp F3
             >;
-
-            sensor-bindings = <&left_encoder C_VOL_UP C_VOL_DN>;
         };
-        
+
         encoder_one {
             compatible = "zmk,behavior-encoder";
             label = "encoder_one";
