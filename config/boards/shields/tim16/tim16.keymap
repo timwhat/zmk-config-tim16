@@ -20,13 +20,8 @@
                 &kp RSHIFT &kp F4   &kp F5   &kp F6
                 &trans     &kp F1   &kp F2   &kp F3
             >;
-        };
-
-        encoder {
-            left_encoder {
-                rotate-left = <&kp C_VOL_UP>;
-                rotate-right = <&kp C_VOL_DN>;
-            };
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
