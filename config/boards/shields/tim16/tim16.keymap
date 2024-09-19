@@ -22,18 +22,11 @@
             >;
         };
 
-        encoder_one {
-            compatible = "zmk,behavior-encoder";
-            label = "encoder_one";
-
-            encoders = < 
-                &left_encoder
-            >;
-
-            bindings = < 
-                &inc VOL_UP, 
-                &dec VOL_DOWN 
-            >;
+        encoder {
+            left_encoder {
+                rotate-left = <&kp C_VOL_UP>;
+                rotate-right = <&kp C_VOL_DN>;
+            };
         };
     };
 };
