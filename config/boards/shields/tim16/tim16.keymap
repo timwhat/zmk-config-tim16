@@ -23,5 +23,19 @@
 
             sensor-bindings = <&left_encoder C_VOL_UP C_VOL_DN>;
         };
+        
+        encoder_one {
+            compatible = "zmk,behavior-encoder";
+            label = "encoder_one";
+
+            encoders = < 
+                &left_encoder
+            >;
+
+            bindings = < 
+                &inc VOL_UP, 
+                &dec VOL_DOWN 
+            >;
+        };
     };
 };
