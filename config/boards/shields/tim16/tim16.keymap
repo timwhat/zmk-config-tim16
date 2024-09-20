@@ -15,7 +15,7 @@
         // |         |    F1   |    F2   |   F3    |
 
             bindings = < 
-                &kp F24    &kp F23  &kp NUBS &kp DEL
+                &kp F24    &kp F23  &kp BSLH &kp DEL
                 &trans     &kp F7   &kp F8   &kp F9
                 &kp RSHIFT &kp F4   &kp F5   &kp F6
                 &trans     &kp F1   &kp F2   &kp F3
