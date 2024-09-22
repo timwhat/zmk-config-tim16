@@ -10,15 +10,15 @@
         default_layer {
         // -------------------------------------------------------------
         // | Mute Mic| Defan   |  \      |   DEL   |
-        // |         |    F7   |    F8   |   F9    |
-        // |  Shift  |    F4   |    F5   |   F6    |
-        // |         |    F1   |    F2   |   F3    |
+        // |         |ticktick |    F21  |Video PP |
+        // |  Shift  |    F15  |    F16  |   F17   |
+        // |         |    F12  |    F13  |   F14   |
 
             bindings = < 
                 &kp F24    &kp F23  &kp BSLH &kp DEL
-                &trans     &kp F7   &kp F8   &kp F9
-                &kp RSHIFT &kp F4   &kp F5   &kp F6
-                &trans     &kp F1   &kp F2   &kp F3
+                &trans     &kp F20  &kp F21  &kp C_PP
+                &kp RSHIFT &kp F15  &kp F16  &kp F17
+                &trans     &kp F12  &kp F13  &kp F14
             >;
             
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
