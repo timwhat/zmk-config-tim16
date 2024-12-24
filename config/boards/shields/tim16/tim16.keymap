@@ -10,35 +10,36 @@
 
         default_layer {
         // -------------------------------------------------------------
-        // | Video PP| Mute Mic|  \      |   DEL   |
-        // |  Shift  |    F18  |    F19  |ticktick |
+        // |bluetoothL|Video PP| Mute Mic|   GRAVE |
+        // |         |    F18  |    F19  |   F21   |
         // |         |    F15  |    F16  |   F17   |
-        // |FunctionL|    F12  |    F13  |   F14   |
+        // |         |    F12  |    F13  |   F14   |
 
             bindings = < 
-                &kp C_PP   &kp F24  &kp BSLH &kp DEL
-                &kp RSHIFT &kp F19  &kp F20  &kp F21
-                &mo 1      &kp F16  &kp F17  &kp F18
-                &mo 2      &kp F13  &kp F14  &kp F15
+            &mo 2      &kp C_PP    &kp F24  &kp GRAVE
+            &trans     &kp F19     &kp F20  &kp F21
+            &mo 1      &kp F16     &kp F17  &kp F18
+            &trans     &kp F13     &kp F14  &kp F15
             >;
-            
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
+
         functionL { // Layer 1
         // -------------------------------------------------------------
-        // | Video PP| Defan   |  \      |   DEL  |
-        // |  Shift  |    F7   |    F8   |   F9   |
+        // |         | Disccall|    Defan|  TILDE |
+        // |         |    F7   |    F8   |   F9   |
         // |         |    F4   |    F5   |   F6   |
         // |         |    F1   |    F2   |   F3   |
 
             bindings = < 
-                &kp C_PP   &kp F23  &kp BSLH &kp DEL
-                &kp RSHIFT &kp F7   &kp F8   &kp F9
-                &trans     &kp F4   &kp F5   &kp F6
-                &trans     &kp F1   &kp F2   &kp F3
+                &trans     &kp F22     &kp F23  &kp TILDE
+                &trans     &kp F7      &kp F8   &kp F9
+                &trans     &kp F4      &kp F5   &kp F6
+                &trans     &kp F1      &kp F2   &kp F3
             >;
             
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_UP>;
         };
 
         bluetoothL {
