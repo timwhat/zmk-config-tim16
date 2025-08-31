@@ -42,18 +42,10 @@
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        extra1 {
-            status = "reserved";
-        };
-
-        extra2 {
-            status = "reserved";
-        };
-
         bluetoothL {
         // -------------------------------------------------------------
-        // |        |       | clear |clear all|
-        // |        |zmkstudio|     |       |
+        // |        |zmkstudio| clear |clear all|
+        // |        |       |       |
         // |        |   p3  |p4     |p5     |
         // |        |   p0  |p1     |p2     |
 
@@ -65,6 +57,14 @@
             >;    
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
 };
