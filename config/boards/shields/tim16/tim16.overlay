@@ -58,6 +58,9 @@
         compatible = "zmk,physical-layout";
         display-name = "tim16 Layout";
         transform = <&default_transform>;
-        keys = < 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 >;
+            keys = < &kscan 0 &kscan 1 &kscan 2 &kscan 3
+                     &kscan 4 &kscan 5 &kscan 6 &kscan 7
+                     &kscan 8 &kscan 9 &kscan 10 &kscan 11
+                     &kscan 12 &kscan 13 &kscan 14 &kscan 15 >;
     };
 };
