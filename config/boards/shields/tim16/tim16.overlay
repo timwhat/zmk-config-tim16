@@ -29,7 +29,6 @@
 
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
-        #transform-cells = <2>; /* row col */
         rows = <4>;
         columns = <4>;
 
@@ -60,7 +59,7 @@
         compatible = "zmk,physical-layout";
         display-name = "tim16";
         transform = <&default_transform>;
-        kscan = <&kscan0>;
+        kscan = <&kscan>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
             , <&key_physical_attrs 100 100  100    0       0     0     0>
