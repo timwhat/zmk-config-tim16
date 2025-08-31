@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
@@ -55,15 +56,28 @@
         triggers-per-rotation = <20>;
     };
 
-    physical_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "tim16 Layout";
+        display-name = "tim16";
         transform = <&default_transform>;
-        keys = <
-            &default_transform 0 0 &default_transform 0 1 &default_transform 0 2 &default_transform 0 3
-            &default_transform 1 0 &default_transform 1 1 &default_transform 1 2 &default_transform 1 3
-            &default_transform 2 0 &default_transform 2 1 &default_transform 2 2 &default_transform 2 3
-            &default_transform 3 0 &default_transform 3 1 &default_transform 3 2 &default_transform 3 3
-        >;
-    };
+        kscan = <&kscan0>;
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  200       0     0     0>
+            , <&key_physical_attrs 100 100    0  300       0     0     0>
+            , <&key_physical_attrs 100 100  100  300       0     0     0>
+            , <&key_physical_attrs 100 100  200  300       0     0     0>
+            , <&key_physical_attrs 100 100  300  300       0     0     0>
+            ;
+        };
 };
