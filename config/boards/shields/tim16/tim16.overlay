@@ -3,8 +3,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan;
-        zmk,matrix_transform = &default_transform;
+        zmk,kscan = &kscan; /* Intentionally omit zmk,matrix_transform for Studio */
     };
 
     kscan: kscan {
