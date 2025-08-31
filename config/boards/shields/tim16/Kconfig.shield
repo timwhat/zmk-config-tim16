@@ -1,2 +1,5 @@
+config ZMK_STUDIO
+    bool "Enable ZMK Studio support"
+    default y
 config SHIELD_TIM16
     def_bool $(shields_list_contains,tim16)
