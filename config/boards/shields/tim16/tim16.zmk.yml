@@ -2,7 +2,7 @@ file_format: "1"
 id: tim16
 name: tim16
 type: shield
-url: https://github.com/Spaceboards/SpaceboardsHardware/tree/master/Keyboards/2%25%20Milk
+url: https://github.com/timwhat/zmk-config-tim16
 requires: [nice_nano_v2]
 features:
   - keys
